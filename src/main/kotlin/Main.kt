@@ -1,6 +1,6 @@
 fun main() {
     var car=Car("Benz","Suv","maroon",6)
-    car.carry(3)
+    car.carry(10)
     car.identity()
     var bus=Bus("toyota","es60","black",12)
 
@@ -29,7 +29,7 @@ fun main() {
     }
 }
 class Bus (make: String,model: String,color: String,capacity: Int):Car(make,model,color,capacity){
-    fun maxTripFare(fare:Double){
+    fun maxTripFare(fare:Double):Double{
         var cal= capacity* fare
         return cal
     }
